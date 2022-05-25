@@ -1,0 +1,90 @@
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="../Home/restaurant.css">  
+    <link rel="stylesheet" href="log.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .home{
+        background-color:cadetblue;
+      }
+      .food{
+        background-color:cadetblue
+      }
+      .contact{
+        background-color:cadetblue
+      }
+      .about{
+        background-color:cadetblue
+      }
+      .log{
+        background-color: rgba(59, 251, 187, 0.619);
+      }
+      
+    </style>
+  </head>
+ <body>
+  <ul class="nav">
+    <li class="Home"><a href="../index.html" target="_self">Home</a></li>
+    <li class="about"><a href="../about/about.html" target="_self">about us</a></li>
+    <li class="food"><a href="../food/food.html" target="_self">Food</a></li>
+    <li class="contact"><a href="../contact/contact.html" target="_self">contact us</a></li>
+    <li class="log"><a href="../log in/log.html"> log in/Register</a></li>
+  </ul>
+  <div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+      <form action="#" class="form" id="form1" onsubmit="return check()">
+        <h2 class="form__title"><b> Sign Up</b></h2>
+        <input type="text" placeholder="User" class="input" id="Fname" required/>
+        <input type="email" placeholder="Email" class="input" id="email" required />
+        <input type="text" class="input" id="phone" name="phone"placeholder="phone" required >
+        <input type="password"placeholder="Password" class="input" id="password" required/>
+        <input type="address"placeholder="address" class="input" id="address" required/>
+        <div class="radio1">
+          <div class="gender"><label for="gender">Gender</label></div>
+          <div class="gender"><input type="radio" name="radio" value="male" required><label for="male" >male</label></div>
+          <div class="gender"><input type="radio" name="radio" value="female" required><label for="female">female</label></div>
+        </div>
+        <input type="submit" class="btn" placeholder="Sign Up"></button>
+        <!-- <button class="btn" onclick="check()">Sign Up</button> -->
+      </form>
+    </div>
+  
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title"><b> Sign In</b></h2>
+        <input type="email" placeholder="Email" class="input" required/>
+        <input type="password" placeholder="Password" class="input" id="Password"  required/>
+        <a href="#" class="link">Forgot your password?</a>
+        <button class="btn">Sign In</button>
+      </form>
+    </div>
+  
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <a href="../index.html"><img src="../pictures/gusto1.png" alt="" class="logo__container"></a>
+    <a href="www.instagram.com"><i class="fa fa-instagram"></i></a>
+    <a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+    <a href="www.google.com"><i class="fa fa-google"></i></a>
+    <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+</footer>
+<script src="log.js"></script>
+ </body>
+ </html>
+  

@@ -1,0 +1,163 @@
+body{
+    position: relative;
+    height: fit-content;
+    background: url(../pictures/menu.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    min-height: 650px;
+}
+.paragraph_container{
+    position: relative;
+    margin-left:20% ;  
+    margin-bottom: 10px;
+    margin-top: 10px;  
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+table td{
+    color: rgb(255, 255, 255);
+}
+
+.klam{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    position: relative;
+    top :-100px;
+    right: 20px;
+    float: right;
+    font-family: cursive;
+    font-style: italic;
+    /* padding: 20px; */
+    /* color: rgba(255, 218, 170, 0.603); */
+    /* color: rgba(255, 218, 170, 0.603); */
+}
+
+div{
+    color: rgb(255, 255, 255);
+}
+
+.over{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: rgba(98, 188, 202, 0.737);
+    top: 0%;
+}
+
+.container{
+    padding-top: 70px;
+    /* position: absolute; */
+    /* display: inline; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+    justify-content: space-between;
+    float: right;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    top: calc((100/3));
+    grid-column-start: 30%;
+    padding-bottom: 100px;
+    margin-left: 30px;   
+}
+@media screen and (max-width: 1000px) {
+    .cell span{
+        text-align: center;
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        top: calc((100/3));
+    }    
+    .klam{
+        right: -1px;
+    }
+    span{
+
+        left: 60px;
+    }
+}
+
+.container .cell  img{
+    border-radius: 50%;
+    transition: border-radius 2s;
+  }
+
+.container .cell img:hover{
+    border-radius: 25px;
+}
+.container .cell hr{
+    position:absolute;
+}
+.klma{
+      padding: 10px;
+}
+
+.cell{
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.712);
+    margin-right: 15px;
+    margin-top: 30px;
+    margin-left: 8px;
+    transition:1s ease-in-out; 
+    box-shadow: 9px 10px 10px rgb(73, 119, 121);
+}
+
+hr{
+   border:  2px solid  rgb(95 158 160)   ;
+}
+
+.cell:hover{
+    transform: scale(0.9);
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 10px rgb(95, 158, 160);
+    font-size:xx-large;
+}
+
+.MAIN.DISH {
+    position: absolute;
+    padding: 30px;
+    color: #001fb8;
+    font-size: x-large;
+    text-shadow: -1px 6px 7px rgb(39, 79, 81);
+}
+
+.cell div{
+    color: rgb(0, 78, 147);
+
+}
+
+.iconPlus{
+    position: relative;
+    top: 20%;
+    left: -40%;
+    width: 30px;
+    /* border: 2px  ; */
+    border-radius:  50% ;
+    background-color: rgb(95 158 160);
+    
+    padding: 4px;
+}
+
+.cell i{
+    size: 300rem;
+    content: "\f099";
+    z-index: 20;
+    color: transparent;
+    color:rgba(255, 255, 255, 0.712);
+    transition: 1s ease-in-out ;
+    
+}
+
+.cell i:hover{
+    transform:matrix(30px);
+}
+
+

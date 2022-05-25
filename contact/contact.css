@@ -1,0 +1,120 @@
+body{
+    background-image: url(../pictures/bc.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    position:  fixed;
+    top: 0%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    right: 0%;
+    max-height:min-content;
+    }
+.bookf{
+  padding: 10%;
+}
+input::placeholder{
+    color: black;
+}
+.booki{
+    /* float: right; */
+    border-radius: 20px;
+    border: 1px aqua solid;
+    width: 90%;
+    display: block;
+    margin: auto;
+    /* height: 80%; */
+    text-align: center;
+    box-sizing:border-box;
+    padding: 15px;
+    /* margin-bottom: 9px; ; */
+    background-color: #00d5ff79;
+   
+    /* color: rgb(255, 0, 0); */
+}
+.twodivs{
+    /* position: relative; */
+    position: absolute;
+    /* flex-wrap:wrap; */
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content:center;
+    align-items: center;
+    float: right;
+    /* justify-content: flex-start;
+    align-items: center; */
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column; */
+    /* flex-flow: column; */
+    margin-top: 50px;
+}
+.book{
+    font-weight:bolder;
+    width: 90%;
+    margin: 30px;
+    text-align: center;
+    padding: 15px;
+    color: aliceblue;
+    text-shadow: 5px 5px 1px black;
+}
+     @media screen and (max-width: 470px) {
+        body{
+            min-height: 150vh;
+        }
+        .twodivs{
+            /* margin-top: 60%; */
+            justify-content: center !important;
+            margin-top: 40%;
+        } 
+      .bookf{
+          margin: 0px;
+          padding: 0px;
+          top: 0px;
+          flex-basis: 100%;
+          height: 200px;
+          
+          
+      }
+      
+      
+      
+      
+} 
+@media screen and (max-width: 600px) {
+   
+    .bookf{
+
+        width: 80%;
+        margin-left: 10%;
+        align-self: center;
+        margin-right: 20% ; 
+    }
+    .twodivs{
+        margin-top: 40%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        top: calc((100/2));
+    }
+    
+}
+
+/* https://codepen.io/coder_bek/pen/GRMLvOa */
+.pic img{
+    /* width: 100%; */
+    border-radius: 30px;
+    width: 60%;
+    display: block;
+    margin: auto;
+    /* height: 100%; */
+}
+
+#sumbit{
+    background-color:black;
+    /* flex-basis: 50%; */
+    
+}
